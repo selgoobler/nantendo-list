@@ -23,22 +23,23 @@ export default function GoalInput(props) {
     //reset input
   }
 
+
   return (
     <Modal visible={props.visible} animationType='slide'>
       <View style={styles.inputContainer}>
         <Image
           style={styles.image}
-          source={require('../assets/images/toad.png')}
+          source={require('../assets/images/qq.png')}
         />
         <TextInput
           style={styles.textInput}
-          placeholder='add goals'
+          placeholder='add games'
           onChangeText={goalInputHandler}
           value={enteredGoalText}
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button title='Add Goal' onPress={addGoalHandler} color='#b180f0' />
+            <Button title='Add' onPress={addGoalHandler} color='#7B50FF' />
           </View>
           <View style={styles.button}>
             <Button title='Cancel' onPress={props.onCancel} color='#f31282' />
@@ -61,14 +62,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flex: 1,
     padding: 15,
-    backgroundColor: '#311b6b',
+    backgroundColor: '#B4ACCC',
   },
   textInput: {
     borderWidth: 1,
     width: '100%',
     borderColor: '#e4d0ff',
     padding: 8,
-    borderRadius: 5,
+    borderRadius: 20,
     padding: 16,
     color: 'white',
   },
